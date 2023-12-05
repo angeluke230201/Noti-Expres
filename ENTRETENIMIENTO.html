@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>ENTRETENIMIENTO</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="menu">
+			<header class="header">
+				<a href="#" class="logo">
+			  <br>
+			  <img src="noti-expres.jpg"/>
+			<h2 class="nombre-empresa"> Noti-Expres </h2>
+			</a>
+			<p>
+			<a href="index.html" class="nav-link">INICIO</a>
+			<a href="POLITICA.html"  class="nav-link">POLITICA</a>
+		
+			<a href="DEPORTES.html" class="nav-link">DEPORTES</a>
+			<a href="ENTRETENIMIENTO.html" class="nav-link">ENTRETENIMIENTO</a>
+			<a href="SALUD.html" class="nav-link">SALUD</a>
+		</p>
+			</header>
+			</main>
+			<br>
+			<br>
+			<br>
+			<div class="container-items">
+				<div class="item">
+					<figure>
+						<img
+							src="SOPA (1).jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Sopa de Letras</h2>
+						
+						<p class="inf"> Descifra el enigma de la cuadrícula, 
+							donde las palabras se esconden en todas direcciones, desafiando tu agudeza y destreza mental.   </p>
+						<button class="tn-add-cart"> <a href="javascript:abrirsopa()"> A Jugar!</a></button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="crusigrama.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Crusigrama</h2>
+						
+						<p class="inf"> Sumérgete en este juego de ingenio y conocimientos,
+							 donde las definiciones te llevarán a descubrir las palabras...&nbsp;</p>
+							  <button class="tn-add-cart"> <a href="javascript:abrircrusigrama()">A Jugar! </a></button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="sudoku.png"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Sudoku</h2>
+						
+						<p class="inf">Prepárate para agudizar tu lógica y concentración
+							 mientras resuelves cada casilla en busca de la combinación perfecta. &nbsp;&nbsp;</p>
+							<button class="tn-add-cart"> <a href="javascript:abrirsudoku()"> A Jugar! </a></button>
+					</div>
+				</div>
+			
+			
+			</div>
+			<footer class="footer-distributed">
+	
+			<div class="footer-left">
+				<h3>Noti-<span>Expres</span></h3>
+	
+				<p class="footer-links">
+					<a href="index.html">INICIO</a>
+					|
+					<a href="contacto.html">CONTACTAME</a>
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:sagar00001.co@gmail.com">Noti-Expres@upch.mx</a></p>
+					</div>
+				</p>
+	<br>
+				<p class="footer-company-name">Copyright © 2023 <strong>Noti-Expres</strong> </p>
+			</div>
+	
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>SOBRE NOSOTROS</span>
+					<strong>En Noti-Expres,</strong> valoramos la transparencia, la integridad y el respeto por nuestra audiencia. Trabajamos arduamente para ofrecer noticias de manera ética y responsable, centrándonos en la verdad y la relevancia para que puedas tomar decisiones informadas en tu vida diaria. </p>
+			 
+		</footer>
+
+
+
+
+		<div class="informacion" id="ventanasopas">
+            <div id="cerrar"> <a href="javascript:cerrarsopa()"> <img src="cerrar.png"></a></div>
+           <h2>Sopa de Letras</h2>
+        </div>
+       
+        <script>
+            function abrirsopa(){
+                document.getElementById("ventanasopas").style.display="block";
+            }
+            function cerrarsopa(){
+                document.getElementById("ventanasopas").style.display="none";
+            }
+        </script>
+
+
+
+
+
+
+
+<div class="informacion" id="ventanacrusigrama">
+	<div id="cerrar"> <a href="javascript:cerrarcrusigrama()"> <img src="cerrar.png"></a></div>
+	<h2>Crusigrama</h2>
+</div>
+
+<script>
+	function abrircrusigrama(){
+		document.getElementById("ventanacrusigrama").style.display="block";
+	}
+	function cerrarcrusigrama(){
+		document.getElementById("ventanacrusigrama").style.display="none";
+	}
+</script>
+
+
+
+
+
+
+
+
+
+<div class="informacion" id="ventanasudoku">
+	<div id="cerrar"> <a href="javascript:cerrarsudoku()"> <img src="cerrar.png"></a></div>
+	<h2>Sudoku</h2>
+</div>
+
+<script>
+	function abrirsudoku(){
+		document.getElementById("ventanasudoku").style.display="block";
+	}
+	function cerrarsudoku(){
+		document.getElementById("ventanasudoku").style.display="none";
+	}
+</script>
+
+
+
+
+
+
+
+		<script src="index.js"></script>
+	</body>
+</html>

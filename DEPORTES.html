@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>DEPORTES</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="menu">
+			<header class="header">
+				<a href="#" class="logo">
+			  <br>
+			  <img src="noti-expres.jpg"/>
+			<h2 class="nombre-empresa"> Noti-Expres </h2>
+			</a>
+			<p>
+			<a href="index.html" class="nav-link">INICIO</a>
+			<a href="POLITICA.html"  class="nav-link">POLITICA</a>
+			
+			<a href="DEPORTES.html" class="nav-link">DEPORTES</a>
+			<a href="ENTRETENIMIENTO.html" class="nav-link">ENTRETENIMIENTO</a>
+			<a href="SALUD.html" class="nav-link">SALUD</a>
+		</p>
+			</header>
+			</main>
+			<br>
+			<br>
+			<br>
+			<div class="container-items">
+				<div class="item">
+					<figure>
+						<img
+							src="deportes.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>La Liga de Beisbol</h2>
+						
+						<p class="inf"> Emitió un comunicado en la que da conocer que la jornada
+							 de fin de semana queda suspendida ante los acontecimientos violentos que se registraron.  </p>
+						<button class="tn-add-cart"> <a href="javascript:abrirbeisbol()">Leer Más </a></button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="gallardo.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Jesús Gallardo</h2>
+						
+						<p class="inf"> Es en este momento el jugador que más minutos ha visto acción
+							 en la Selección Mexicana de futbol soccer que dirige el técnico argentino "El Tata".&nbsp;</p>
+							  <button class="tn-add-cart"> <a href="javascript:abrirgallardo()">Leer Más </a></button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="olmecas.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Olmecas vs Leones de Yucatán</h2>
+						
+						<p class="inf">Con una labor impecable del tabasqueño Juan Pablo Oramas, 
+							Olmecas de Tabasco derrotó en el segundo de la serie a los Leones de Yucatán.&nbsp;&nbsp;</p>
+							<button class="tn-add-cart"> <a href="javascript:abrirolmecas()">Leer Más </a></button>
+					</div>
+				</div>
+			
+			
+			</div>
+			<footer class="footer-distributed">
+	
+			<div class="footer-left">
+				<h3>Noti-<span>Expres</span></h3>
+	
+				<p class="footer-links">
+					<a href="index.html">INICIO</a>
+					|
+					<a href="contacto.html">CONTACTAME</a>
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:sagar00001.co@gmail.com">Noti-Expres@upch.mx</a></p>
+					</div>
+				</p>
+	<br>
+				<p class="footer-company-name">Copyright © 2023 <strong>Noti-Expres</strong> </p>
+			</div>
+	
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>SOBRE NOSOTROS</span>
+					<strong>En Noti-Expres,</strong> valoramos la transparencia, la integridad y el respeto por nuestra audiencia. Trabajamos arduamente para ofrecer noticias de manera ética y responsable, centrándonos en la verdad y la relevancia para que puedas tomar decisiones informadas en tu vida diaria. </p>
+			 
+		</footer>
+
+
+
+
+
+		<div class="informacion" id="ventanabeisbol">
+            <div id="cerrar"> <a href="javascript:cerrarbeisbol()"> <img src="cerrar.png"></a></div>
+           <h2>Beisbol</h2>
+        </div>
+       
+        <script>
+            function abrirbeisbol(){
+                document.getElementById("ventanabeisbol").style.display="block";
+            }
+            function cerrarbeisbol(){
+                document.getElementById("ventanabeisbol").style.display="none";
+            }
+        </script>
+
+
+
+
+
+
+
+<div class="informacion" id="ventanagallardo">
+	<div id="cerrar"> <a href="javascript:cerrargallardo()"> <img src="cerrar.png"></a></div>
+	<h2>Gallardo</h2>
+</div>
+
+<script>
+	function abrirgallardo(){
+		document.getElementById("ventanagallardo").style.display="block";
+	}
+	function cerrargallardo(){
+		document.getElementById("ventanagallardo").style.display="none";
+	}
+</script>
+
+
+
+
+
+
+
+
+
+<div class="informacion" id="ventanaolmeca">
+	<div id="cerrar"> <a href="javascript:cerraraolmecas()"> <img src="cerrar.png"></a></div>
+	<h2>Olmecas</h2>
+</div>
+
+<script>
+	function abrirolmecas(){
+		document.getElementById("ventanaolmeca").style.display="block";
+	}
+	function cerraraolmecas(){
+		document.getElementById("ventanaolmeca").style.display="none";
+	}
+</script>
+
+		<script src="index.js"></script>
+	</body>
+</html>
