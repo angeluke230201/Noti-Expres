@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>INFORMACION</title>
+        <link rel="stylesheet" href="estilos.css" type="text/css"> 
+    </head>
+
+    <body>
+        <div class="inf" id="ventana">
+            <div id="cerrar"> <a href="javascript:cerrar()"> <img src="logo/cerrar.png"></a></div>
+            bienvenios
+        </div>
+        <header></header>
+        <nav></nav>
+        <section id="contenedor">
+
+         <a href="javascript:abrir()">abrir ventana</a>
+
+        </section>
+        
+        <script>
+            function abrir(){
+                document.getElementById("ventana").style.display="block";
+            }
+            function cerrar(){
+                document.getElementById("ventana").style.display="none";
+            }
+        </script>
+    </body>
+</html>
